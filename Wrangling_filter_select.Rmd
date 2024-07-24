@@ -22,6 +22,7 @@ data(movies)
 
 It's always a good idea to do some recon work first. What do the data look like? How many observations and variables do we have? What are the variable names?
 
+   It looks like this data is showing genres of movies ranging from action to shorts from 1939 until the 2002, it shows the title of the movie the year of it, the length of the movie, the budget to make the movie and the rating of the movie to see if the people like it  
 
 ```{r}
 # View() opens the data in another window. 'head(movies)' will show the first few rows.
@@ -33,7 +34,7 @@ It's always a good idea to do some recon work first. What do the data look like?
 dim(movies)     # always rows x columns
 names(movies)   # a good way to keep track of variable names for later use
 ```
-
+   
 
 ## Motivation for Wrangling
 
