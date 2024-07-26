@@ -230,8 +230,15 @@ See if you can answer these questions:
 
 1. How many movies were released in 1995?
 
-```{r}
+ The amount of movies were released in 1995
 
+```{r}
+movies1995 <- movies %%
+  filter (year >= 1995) %%
+drop_na (year) %%
+  select (title,year)
+
+movies1995
 ```
 
 2. Which Comedies with an MPAA rating, over 120 minutes have a rating above 8?
